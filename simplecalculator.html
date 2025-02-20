@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1 id="calculations"></h1> <br> <br>
+    <p id="q1"></p>
+    <p id="a1"></p> <br>
+    <p id="q2"></p>
+    <p id="a2"></p> <br>
+    <p id="q3"></p>
+    <p id="a3"></p> <br>
+    <p id="q4"></p>
+    <p id="a4"></p> <br>
+    <p id="q5"></p>
+    <p id="a5"></p>
+    <script>
+        document.getElementById("calculations").innerHTML="LET'S DO SOME CALCULATIONS!";
+        document.getElementById("q1").innerHTML="Question 1 : What is the sum of 463 and 992? ";
+        var num1 =  463;
+        var num2 = 992;
+        var sum = num1 + num2
+        document.getElementById("a1").innerHTML="Answer 1 : "+sum;
+        document.getElementById("q2").innerHTML="Question 2 : There are 23 columns and 56 rows in a grid. Can you guess what is the number of total number of rows and columns?";
+        var num3 = 23;
+        var num4 = 56;
+        var sum = num3 * num4;
+        document.getElementById("a2").innerHTML="Answer 2 : "+sum + "rows and colums";
+        document.getElementById("q3").innerHTML="Question 3 : A institution contains 2025 students. The priciple want to give chocolates as new year present. So that he managed 6075 chocolates. Then, how many chocolates will each person receive?"
+        var num5 = 6075;
+        var num6 = 2025;
+        var sum = num5 / num6;
+        document.getElementById("a3").innerHTML="Answer 3 : " + sum + "chocolates";
+        document.getElementById("q4").innerHTML="Question 4 : The displacement of a car is 30 metre. After a while the driver reliazed that he forgot his watch in his home. So that he backed to his house. Which was 5.5 metre far away from the starting point. Determine the total displacement. "
+        var num7 = 30;
+        var num8 = 5.5;
+        var sum = num7 - num8 
+        document.getElementById("a4").innerHTML="Answer 4 :"+sum + "metre";
+        document.getElementById("q5").innerHTML="Question 5 : Jonathan is wrote a book. He made 13 copies of it. He decided to distribute 9 of them to his friends and teachers. And he sent the rest of them to his grandparents and relatives. How many books did his grandparents and relatives received?"
+        var num9 = 13;
+        var num10 = 9;
+        var sum = num9 % num10
+        document.getElementById("a5").innerHTML="Answer 5 : "+ sum + "books";
+    </script>
+</body>
+</html>
