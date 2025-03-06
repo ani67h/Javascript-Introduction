@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #intro{
+            text-align: center;
+        }
+        #multiples{
+            text-align: center;
+        }
+    </style>
+<body>
+    <h1>GUYS LET'S FIND OUT A FEW MULTIPLES OF 5!</h1> <br> <br> 
+    <h3 id="intro"></h3> <br> 
+    <p id="multiples"></p>
+    
+    <script>
+       var num = function(a,b) {
+        return a*b;
+       }
+       
+       var output = ""
+       document.getElementById("intro").innerHTML = "Multiples of 5 :- "
+       for( i=1; i<1000; i++) {  
+        output += "5x" + i + "=" + num(5,i) + "<br> <br>"      
+        document.getElementById("multiples").innerHTML =  output
+       }
+    </script>
+</body>
+</html>
